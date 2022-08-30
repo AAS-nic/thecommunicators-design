@@ -59,7 +59,7 @@
       <div class="col-md-6 offset-3">
          <div class="right-content">
             <div class="top-content">
-               <h6>Membership your free account and <em>get immediate</em> access to online facilities</h6>
+               <h6>Membership</h6>
             </div>
             <form id="contact" action="" method="get">
                <div class="row">
@@ -133,6 +133,23 @@
                   </div>
                   <div class="col-md-12">
                      <fieldset>
+                        <select name="membership">
+                            <option value="null">Select membership type</option>
+                            <optgroup label="Active Membership">
+                                <option value="Student">Student</option>
+                                <option value="Regular">Regular</option>
+                                <option value="Employment Exception">Employment Exception</option>
+                                <option value="Sustaining">Sustaining</option>
+                            </optgroup>
+                            <optgroup label="Association Membership">
+                                <option value="Organization">Organization</option>
+                                <option value="Individual">Individual</option>
+                            </optgroup>
+                        </select>
+                     </fieldset>
+                  </div>
+                  <!--<div class="col-md-12">
+                     <fieldset>
                         <input type="text" name="active_member" list="active_member" placeholder="Active Membership">
                         <datalist id="active_member">
                            <option value="Student">
@@ -165,12 +182,19 @@
                               <option>Apatosaurus</option>
                            </optgroup>
                         </select>
-                  </div>
+                  </div>-->
                   <div class="col-md-12">
                      <fieldset>
                         <label style="color: #fff;">Upload Your CV</label>
                         <input name="upload" type="file" class="form-control" id="upload" placeholder="Upload Your CV">
                      </fieldset>
+                  </div>
+                  <div class="col-md-1 mr-0">
+                    <input type="checkbox" name="tnc" id="tnc">
+                  </div>
+                  <div class="col-md-11 text-left"><label class="text-white mt-2" for="tnc">I have read the terms and conditions of The Communicators</label></div>
+                  <div class="col-md-12">
+                    <p class="text-white">P.S. The form submission does not guarantee the confirmation of membership. Membership endorsement is subject to verification and approval by the executive board of The Communicators. Our team will contact you upon submitting the membership form for further verification.</p>
                   </div>
                   <div class="col-md-12">
                      <fieldset>
