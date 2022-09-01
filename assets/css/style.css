@@ -123,7 +123,7 @@ a.menu-link { display: none; }
   nav[role="navigation"] li.active a {
       color: #f5a425;
   }
-  
+
   @media screen and (min-width: 951px) {
     .js nav[role="navigation"] {
       max-height: none;
@@ -171,7 +171,7 @@ a.menu-link { display: none; }
 }
 
 .main-header .logo a {
-    font-size: 34px;
+    font-size: 36px;
     text-transform: uppercase;
     font-weight: 800;
     color: #fff;
@@ -624,7 +624,7 @@ section.features .col-4 {
 }
 
 @media screen and (max-width: 767px) {
-  
+
   .tabs-content {
       text-align: center;
   }
@@ -679,10 +679,12 @@ section.features .col-4 {
 }
 
 .member_elegibility table th, .member_elegibility table td{
+
   color:#fff;
   text-align: center;
   padding: 20px;
 } 
+
 .member_elegibility table th{
   background-color: rgba(250,250,250,0.2);
   padding: 32px 0px;
@@ -697,7 +699,7 @@ section.features .col-4 {
 /* membership form  */
 
 .membership-section {
-    background-image:  url(../image/choosing-bg.jpg); 
+    background-image:  url(../image/choosing-bg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-color: #172238;
@@ -853,11 +855,46 @@ section.features .col-4 {
     background-color: rgba(250,250,250,0.1);
 }
 
+.membership-section form textarea {
+    /* width: 100%;
+    height: 40px; */
+    background-color: rgba(250,250,250,0.1);
+    border-radius: 0px;
+    border: none;
+    outline: none;
+    color: #fff;
+    font-size: 13px;
+    margin-bottom: 20px;
+    letter-spacing: 0.5px;
+}
+
+.membership-section form textarea:focus{
+    color: #fff;
+    background-color: rgba(250,250,250,0.1);
+}
+
+.membership-section form select {
+    width: 100%;
+    height: 40px;
+    background-color: rgba(250,250,250,0.1);
+    border-radius: 0px;
+    border: none;
+    outline: none;
+    color: #fff;
+    font-size: 13px;
+    margin-bottom: 20px;
+    letter-spacing: 0.5px;
+}
+
+.membership-section form select option, .membership-section form select optgroup{
+    color: #333;
+}
+
 .membership-section form::placeholder { color: #fff }
 .membership-section form input::placeholder { color: #fff; }
 .membership-section form input::placeholder { color: #fff; }
 
-.membership-section form a {
+.membership-section form input[type="submit"] , .membership-section form button{
     margin-top: 10px;
     background-color: #f5a425;
     color: #fff;
@@ -870,6 +907,10 @@ section.features .col-4 {
     outline: none;
     box-shadow: none;
     border: none;
+}
+
+.membership-section form input[type="submit"]:disabled , .membership-section form button:disabled{
+    background-color: rgb(164, 164, 164);
 }
 
 
