@@ -921,7 +921,7 @@ section.features .col-4 {
 /* Courses */
 
 #member {
-    background-image: url(../image/coming-soon-bg.jpg);
+    background-image:url(../image/backgroundimage.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-color: #172238;
@@ -1013,7 +1013,7 @@ section.features .col-4 {
 /* Video */
 
 section.video {
-    background-image: url(../image/video-bg.jpg);
+    background-image: url(../image/bg-2.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-color: #172238;
@@ -1323,10 +1323,10 @@ section.video .left-content .main-button {
 
 /* Executive Committe */
 .executive_committee{
-  background-image: url(../image/video-bg.jpg);
+  /* background-image: url(); */
   background-repeat: no-repeat;
   background-size: cover;
-  background-color: #172238;
+  background-color: #1A2539;
   padding: 120px 0px;
 }
 
