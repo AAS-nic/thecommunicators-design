@@ -82,7 +82,27 @@ header {
     position: relative;
 }
 
+.about_us {
+    background-image: url(../../../assets/image/choosing-bg.jpg);
+    background-color: #0055ff;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@media (min-width: 768px) {
+    .caption-text {
+        font-weight: 900 !important;
+        font-size: 70px !important;
+    }
+    .logo-text {
+        font-weight: 900 !important;
+        font-size: 40px !important;
+    }
+}
 /*----bootstrap override------*/
 .bg-dark {
     background-color: #151f38 !important;
+}
+a {
+    text-decoration: none !important;
 }
