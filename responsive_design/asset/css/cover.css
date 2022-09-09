@@ -94,8 +94,18 @@ header {
         font-weight: 900 !important;
         font-size: 70px !important;
     }
+}
+
+@media (min-width: 1555px) {
     .logo-text {
         font-weight: 900 !important;
+        font-size: 40px !important;
+    }
+}
+
+@media (min-width: 1044) {
+    .logo-text {
+        font-weight: 100 !important;
         font-size: 40px !important;
     }
 }
