@@ -3,107 +3,108 @@
 
 <head>
 
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+   <meta name="description" content="">
+   <meta name="author" content="">
+   <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900" rel="stylesheet">
 
-    <title>Communicators</title>
+   <title>Communicators</title>
 
-    <!-- Bootstrap core CSS -->
-    <link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+   <!-- Bootstrap core CSS -->
+   <link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Additional CSS Files -->
-    <link rel="stylesheet" href="assets/css/fontawesome.css">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
-    <link rel="stylesheet" href="assets/css/lightbox.css">
+   <!-- Additional CSS Files -->
+   <link rel="stylesheet" href="assets/css/fontawesome.css">
+   <link rel="stylesheet" href="assets/css/style.css">
+   <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+   <link rel="stylesheet" href="assets/css/lightbox.css">
 
 </head>
 
 <body>
 
 
-    <!--header-->
-    <header class="main-header clearfix" role="header">
-        <div class="logo">
-            <img src="{{ asset('assets/image/communicators_logo_transparent.png') }}" alt="" width="300px" height="auto"><a href="#">The <span style="color: #F5A425;">Commun</span>icators</a>
-        </div>
-        <a href="#menu" class="menu-link"><i class="fa fa-bars"></i></a>
-        <nav id="menu" class="main-nav" role="navigation">
-            <ul class="main-menu">
-                <li class="home"><a href="#section1"><i class="fa fa-home" aria-hidden="true"></i></a></li>
-                <li><a href="#about_us">About Us</a>
-                </li>
-                <li><a href="#section3">Membership</a></li>
-                <!-- <li><a href="#section5">Video</a></li> -->
-                <li><a href="#section6">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+   <!--header-->
+   <header class="main-header clearfix" role="header">
+      <div class="logo">
+         <img src="assets/image/Communicators Logo (Coloured Background).jpg">
+         <a href="./index.html">The <span style="color: #F5A425;">Commun</span>icators</a>
+      </div>
+      <a href="#menu" class="menu-link"><i class="fa fa-bars"></i></a>
+      <nav id="menu" class="main-nav" role="navigation">
+         <ul class="main-menu">
+            <li class="home"><a href="#top"><i class="fa fa-home" aria-hidden="true"></i></a></li>
+            <li><a href="./index.html#about_us">About Us</a>
+            </li>
+            <li><a href="./index.html#membership">Membership</a></li>
+            <!-- <li><a href="#section5">Video</a></li> -->
+            <li><a href="./index.html#section6">Contact</a></li>
+         </ul>
+      </nav>
+   </header>
 
-    <div class="page-header">
-        <div class="overlay">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12 text-center">
-                        <h1>Fill Your Membership</h1>
-                    </div>
-                </div>
+   <div class="page-header">
+      <div class="overlay">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-12 text-center">
+                  <h1>Fill Your Membership </h1>
+               </div>
             </div>
-        </div>
-    </div>
+         </div>
+      </div>
+   </div>
 
-    <section id="membership-form" class="membership-section">
-        <div class="col-md-6 offset-3">
-            <div class="right-content">
-                <div class="top-content">
-                    <h6>Membership</h6>
-                </div>
-                <form id="contact" action="/submit_mem_form" method="POST" enctype="multipart/form-data">
-                    @csrf
-                    <div class="row">
-                        <div class="col-md-6">
-                            <fieldset>
-                                <input name="name" type="text" class="form-control" id="name"
-                                    placeholder="Your Name" required="">
-                            </fieldset>
-                        </div>
-                        <div class="col-md-6">
-                            <fieldset>
-                                <input name="contact" type="text" class="form-control" id="contact"
-                                    placeholder="Your Phone Number" required="">
-                            </fieldset>
-                        </div>
-                        <div class="col-md-6">
-                            <fieldset>
-                                <input name="email" type="text" class="form-control" id="email"
-                                    placeholder="Your Email" required="">
-                            </fieldset>
-                        </div>
-                        <div class="col-md-6">
-                            <fieldset>
-                                <input type="text" name="profession" list="Profession"
-                                    placeholder="Choose Your Profession">
-                                <datalist id="Profession">
-                                    <option value="Student">
-                                    <option value="Teacher">
-                                    <option value="Professor">
-                                    <option value="Govt Emolyee">
-                                    <option value="Other">
-                                </datalist>
-                            </fieldset>
-                        </div>
-                        <div class="col-md-12">
-                            <label style="color: #fff;">Residential Address</label>
-                        </div>
-                        <div class="col-md-12">
-                            <fieldset>
-                                <textarea class="form-control" name="residential_adrs" id="residential_adrs" cols="30" rows="10"></textarea>
-                            </fieldset>
-                        </div>
-                        <!--<div class="col-md-3">
+   <section id="membership-form" class="membership-section">
+      <div class="col-md-6 offset-3">
+         <div class="right-content">
+            <div class="top-content">
+               <h6>Membership</h6>
+            </div>
+            <form id="contact" action="/submit_mem_form" method="POST" enctype="multipart/form-data">
+               @csrf
+               <div class="row">
+                  <div class="col-md-6">
+                     <fieldset>
+                        <input name="name" type="text" class="form-control" id="name" placeholder="Your Name"
+                           required="">
+                     </fieldset>
+                  </div>
+                  <div class="col-md-6">
+                     <fieldset>
+                        <input name="contact" type="text" class="form-control" id="contact"
+                           placeholder="Your Phone Number" required="">
+                     </fieldset>
+                  </div>
+                  <div class="col-md-6">
+                     <fieldset>
+                        <input name="email" type="text" class="form-control" id="email" placeholder="Your Email"
+                           required="">
+                     </fieldset>
+                  </div>
+                  <div class="col-md-6">
+                     <fieldset>
+                        <input type="text" name="profession" list="Profession" placeholder="Choose Your Profession">
+                        <datalist id="Profession">
+                           <option value="Student">
+                           <option value="Teacher">
+                           <option value="Professor">
+                           <option value="Govt Emolyee">
+                           <option value="Other">
+                        </datalist>
+                     </fieldset>
+                  </div>
+                  <div class="col-md-12">
+                     <label style="color: #fff;">Residential Address</label>
+                  </div>
+                  <div class="col-md-12">
+                     <fieldset>
+                        <textarea class="form-control" name="residential_adrs" id="residential_adrs" cols="30"
+                           rows="10"></textarea>
+                     </fieldset>
+                  </div>
+                  <!--<div class="col-md-3">
                      <fieldset>
                         <input name="state" type="text" class="form-control" id="state" placeholder="State">
                      </fieldset>
@@ -113,15 +114,16 @@
                         <input name="pin" type="text" class="form-control" id="pin" placeholder="Pin Code">
                      </fieldset>
                   </div>-->
-                        <div class="col-md-12">
-                            <label style="color: #fff;">Current Address</label>
-                        </div>
-                        <div class="col-md-12">
-                            <fieldset>
-                                <textarea class="form-control" name="current_adrs" id="current_adrs" cols="30" rows="10"></textarea>
-                            </fieldset>
-                        </div>
-                        <!--<div class="col-md-3">
+                  <div class="col-md-12">
+                     <label style="color: #fff;">Current Address</label>
+                  </div>
+                  <div class="col-md-12">
+                     <fieldset>
+                        <textarea class="form-control" name="current_adrs" id="current_adrs" cols="30"
+                           rows="10"></textarea>
+                     </fieldset>
+                  </div>
+                  <!--<div class="col-md-3">
                      <fieldset>
                         <input name="state" type="text" class="form-control" id="state" placeholder="State">
                      </fieldset>
@@ -131,24 +133,24 @@
                         <input name="pin" type="text" class="form-control" id="pin" placeholder="Pin Code">
                      </fieldset>
                   </div>-->
-                        <div class="col-md-12">
-                            <fieldset>
-                                <select name="membership">
-                                    <option value="null">Select membership type</option>
-                                    <optgroup label="Active Membership">
-                                        <option value="Student">Student</option>
-                                        <option value="Regular">Regular</option>
-                                        <option value="Employment Exception">Employment Exception</option>
-                                        <option value="Sustaining">Sustaining</option>
-                                    </optgroup>
-                                    <optgroup label="Association Membership">
-                                        <option value="Organization">Organization</option>
-                                        <option value="Individual">Individual</option>
-                                    </optgroup>
-                                </select>
-                            </fieldset>
-                        </div>
-                        <!--<div class="col-md-12">
+                  <div class="col-md-12">
+                     <fieldset>
+                        <select name="membership">
+                           <option value="null">Select membership type</option>
+                           <optgroup label="Active Membership">
+                              <option value="Student">Student</option>
+                              <option value="Regular">Regular</option>
+                              <option value="Employment Exception">Employment Exception</option>
+                              <option value="Sustaining">Sustaining</option>
+                           </optgroup>
+                           <optgroup label="Association Membership">
+                              <option value="Organization">Organization</option>
+                              <option value="Individual">Individual</option>
+                           </optgroup>
+                        </select>
+                     </fieldset>
+                  </div>
+                  <!--<div class="col-md-12">
                      <fieldset>
                         <input type="text" name="active_member" list="active_member" placeholder="Active Membership">
                         <datalist id="active_member">
@@ -183,50 +185,52 @@
                            </optgroup>
                         </select>
                   </div>-->
-                        <div class="col-md-12">
-                            <fieldset>
-                                <label style="color: #fff;">Upload Your CV</label>
-                                <input name="cv" type="file" class="form-control" id="upload"
-                                    placeholder="Upload Your CV">
-                            </fieldset>
-                        </div>
-                        <div class="col-md-12">
-                            <fieldset>
-                                <label style="color: #fff;">Upload Your Photo</label>
-                                <input name="photo" type="file" class="form-control" id="upload"
-                                    placeholder="Upload Your Photo">
-                            </fieldset>
-                        </div>
-                        <div class="col-md-1 mr-0">
-                            <input type="checkbox" name="tnc" id="tnc">
-                        </div>
-                        <div class="col-md-11 text-left"><label class="text-white mt-2" for="tnc">I have read
-                                the terms and conditions of The Communicators</label></div>
-                        <div class="col-md-12">
-                            <p class="text-white">P.S. The form submission does not guarantee the confirmation of
-                                membership. Membership endorsement is subject to verification and approval by the
-                                executive board of The Communicators. Our team will contact you upon submitting the
-                                membership form for further verification.</p>
-                        </div>
-                        <div class="col-md-12">
-                            <fieldset>
-                                <input type="submit" id="form-submit" class="button"/>
-                            </fieldset>
-                        </div>
-                    </div>
-                </form>
-            </div>
-        </div>
-    </section>
+                  <div class="col-md-12">
+                     <fieldset>
+                        <label style="color: #fff;">Upload Your CV</label>
+                        <input name="cv" type="file" class="form-control" id="upload" placeholder="Upload Your CV">
+                     </fieldset>
+                  </div>
+                  <div class="col-md-12">
+                     <fieldset>
+                        <label style="color: #fff;">Upload Your Photo</label>
+                        <input name="photo" type="file" class="form-control" id="upload"
+                           placeholder="Upload Your Photo">
+                     </fieldset>
+                  </div>
+                  <div class="col-md-1 mr-0">
+                     <input type="checkbox" name="tnc" id="tnc">
+                  </div>
+                  <div class="col-md-11 text-left"><label class="text-white mt-2" for="tnc">I have read
+                        the terms and conditions of The Communicators</label></div>
+                  <div class="col-md-12">
+                     <p class="text-white">P.S. The form submission does not guarantee the confirmation of
+                        membership. Membership endorsement is subject to verification and approval by the
+                        executive board of The Communicators. Our team will contact you upon submitting the
+                        membership form for further verification.</p>
+                  </div>
+                  <div class="col-md-12">
+                     <fieldset>
+                        <input type="submit" id="form-submit" class="button" />
+                     </fieldset>
+                  </div>
+               </div>
+            </form>
+         </div>
+      </div>
+   </section>
 
    <section class="member_elegibility">
       <div class="container">
          <div class="row">
-            <h2>
-               Types Of Menber Ship
-            </h2>
-            <br><br>
-            <p>ACTIVE MEMBERSHIP*</p>
+            <div class="col-md-12">
+               <div class="section-heading">
+               <h2>
+                  Types Of Menber Ship
+               </h2>
+            </div>
+            </div>
+            <h4 class="team-member">Active Membership</h4>
             <div class="col-md-12">
                <table>
                   <tr>
@@ -236,50 +240,75 @@
                      <th>SUSTAINING</th>
                   </tr>
                   <tr>
-                     <td>Eligibility: Any Active Member of the Association shall be designated a Sustaining Member after
+                     <td><b>Eligibility:</b> Any Active Member of the Association shall be designated a Sustaining Member after
                         payment of the annual dues specified for such membership.</td>
-                     <td>Eligibility: Any person desiring to promote the purposes of this Association shall be duly
+                     <td><b>Eligibility:</b> Any person desiring to promote the purposes of this Association shall be duly
                         accepted into its active membership as a Regular Member after payment of the annual dues
                         specified for such membership.</td>
-                     <td>Eligibility: PhDs who are no longer students and are employed with teaching part-time. This
+                     <td><b>Eligibility:</b> PhDs who are no longer students and are employed with teaching part-time. This
                         includes those who are only on a visiting appointment for one year but do not have permanent
                         employment.</td>
-                     <td>Eligibility: Any Active Member of the Association shall be designated a Sustaining Member after
+                     <td><b>Eligibility:</b> Any Active Member of the Association shall be designated a Sustaining Member after
                         payment of the annual dues specified for such membership.</td>
                   </tr>
                   <tr>
                      <td>
-                        <h3>
+                        <h4>
                            Benefits
-                        </h3>
+                        </h4>
                         <p>
-                           <ul>
-                              <li>
-                                 
-                              </li>
-                           </ul>
+                        <ul>
+                           <li>
+                              Voting Privileges
+                           </li>
+                           <li>
+                              Access to all Regular Publications
+                           </li>
+                           <li>
+                              Hold Official Positions in the Association
+                           </li>
+                        </ul>
                         </p>
                      </td>
                      <td>
-                        <h3>
+                        <h4>
                            Benefits
-                        </h3>
+                        </h4>
+                        <ul>
+                           <li>
+                              Voting Privileges
+                           </li>
+                           <li>
+                              Access to all Regular Publications
+                           </li>
+                           <li>
+                              Hold Official Positions in the Association
+                           </li>
+                        </ul>
                         <p>
 
                         </p>
                      </td>
                      <td>
-                        <h3>
-                           Benefits
-                        </h3>
-                        <p>
-
-                        </p>
                      </td>
                      <td>
-                        <h3>
+                        <h4>
                            Benefits
-                        </h3>
+                        </h4>
+                        <ul>
+                           <li>
+                              Voting Privileges
+                           </li>
+                           <li>
+                              Access to all Regular Publications
+                           </li>
+                           <li>
+                              Hold Official Positions in the Association
+                           </li>
+                           <li>
+                              Additional privileges designated by the board of directors
+                           </li>
+                        </ul>
                         <p>
 
                         </p>
@@ -287,58 +316,107 @@
                   </tr>
                </table>
             </div>
-        </div>
 
-    </section>
-
-    <footer class="footer-section" data-section="section6">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4">
-                    <h3>CONTACT <span style="color: #F5A425;">INFO</span></h3>
-                    <div class="info">
-                        <ul>
-                            <li>
-                                <h4><i class="fa fa-phone"></i>Telefone</h4>
-                                <p>(000) 123 456 78- (000) 123 4567 89</p>
-
-                            </li>
-                            <li>
-                                <h4><i class="fa fa-map-marker"></i>Address</h4>
-                                <p>2046 Blue Spruce Lane Laurel Canada</p>
-                            </li>
-                            <li>
-                                <h4><i class="fa fa-envelope"></i>E mail</h4>
-                                <p>rest@gmail.com - rest@mail.ru</p>
-
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-md-4 membership">
-                    <!-- <h3 style="color: #F5A425;">Membership</h3> -->
-                    <a type="submit" id="form-submit" class="button">Membership</a>
-                    <p>Please fill Your data for membership link</p>
-                </div>
-                <div class="col-md-4">
-
-                </div>
+            <h4 class="team-member">Association Membership</h4>
+            <div class="col-md-12">
+               <table>
+                  <tr>
+                     <th>Organizational</th>
+                     <th>Individual</th>
+                  </tr>
+                  <tr>
+                     <td> <b>Eligibility:</b> An application for Association membership must be accompanied by payment of
+                        specified fees for Association Membership. Once the petition for Association membership has been
+                        ratified by action of The Communicators Executive Board, the membership is immediately active.
+                        The highest ranking elected officer of the petitioning Association shall be designated as an
+                        Active Member of 'The Communicators'. </td>
+                     <td><b>Eligibility:</b> Members of fully sanctioned Association Member organizations may become Additional
+                        Association Members of 'The Communicators' by having the Point of Contact submit their names
+                        and contact information to 'The Communicators' Member Services. Additional Association Members
+                        do not hold an ACTIVE membership, however, they may attend 'The Communicators  events as
+                        members by paying the fees required of 'The Communicators' Active Members.</td>
+                  </tr>
+               </table>
             </div>
-        </div>
-    </footer>
+         </div>
 
-    <!-- Scripts -->
-    <!-- Bootstrap core JavaScript -->
-    <script src="assets/jquery/jquery.min.js"></script>
-    <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+   </section>
 
-    <script src="assets/js/isotope.min.js"></script>
-    <script src="assets/js/owl-carousel.js"></script>
-    <script src="assets/js/lightbox.js"></script>
-    <script src="assets/js/tabs.js"></script>
-    <script src="assets/js/video.js"></script>
-    <script src="assets/js/slick-slider.js"></script>
-    <script src="assets/js/custom.js"></script>
+   <footer class="footer-section" id="section6">
+      <div class="container">
+         <div class="row">
+            <div class="col-md-4">
+               <div class="footer-part">
+                     <div class="footer-logo">
+                     <img src="assets/image/Communicators Logo (Coloured Background).jpg" alt="" width="100px"height="100px">
+                  </div>
+                  <h4>Values</h4>
+                  <ul>
+                     <li>
+                        Excellence
+                     </li>
+                     <li>
+                        Integrity
+                     </li>
+                     <li>
+                        Equity
+                     </li>
+                     <li>
+                        Education
+                     </li>
+                  </ul>
+               </div>
+         
+            </div>
+            <div class="col-md-4 membership">
+               <!-- <h3 style="color: #F5A425;">Membership</h3> -->
+               <a type="submit" id="form-submit" class="button">Membership</a>
+               <p>Please fill Your data for membership link</p>
+               <div class="social-icon">
+                  <ul class="list-inline">
+                     <li class="list-inline-item"><a href="https://www.facebook.com/The-Communicators-106369648877057"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                     <li class="list-inline-item"><a href="https://twitter.com/Communicators22"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                     <li class="list-inline-item"><a href=" https://www.linkedin.com/in/the-communicators-385b3324a/"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                     </li>
+                  </ul>
+               </div>
+            </div>
+            <div class="col-md-4">
+               <h3>CONTACT <span style="color: #F5A425;">INFO</span></h3>
+               <div class="info">
+                  <ul class="contact">
+                     <!-- <li>
+                        <h4><i class="fa fa-phone"></i><span>Telefone</span> </h4>
+                        <p>(000) 123 456 78- (000) 123 4567 89</p>
+                     </li> -->
+                     <li>
+                        <h4><i class="fa fa-map-marker"></i><span>Address</span></h4>
+                        <p>Flat 3/1 W2CR Phase IVB Golf Green, Kolkata 700095</p>
+                     </li>
+                     <li>
+                        <h4><i class="fa fa-envelope"></i><span>E mail</span></h4>
+                        <p>info@thecommunicators.org</p>
+                     </li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+      </div>
+   </footer>
+
+
+   <!-- Scripts -->
+   <!-- Bootstrap core JavaScript -->
+   <script src="assets/jquery/jquery.min.js"></script>
+   <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+   <script src="assets/js/isotope.min.js"></script>
+   <script src="assets/js/owl-carousel.js"></script>
+   <script src="assets/js/lightbox.js"></script>
+   <script src="assets/js/tabs.js"></script>
+   <script src="assets/js/video.js"></script>
+   <script src="assets/js/slick-slider.js"></script>
+   <script src="assets/js/custom.js"></script>
 
 </body>
 
