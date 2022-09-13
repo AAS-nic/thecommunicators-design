@@ -84,7 +84,7 @@ header {
 }
 
 .about_us {
-    background-image: url(./asset/image/choosing-bg.jpg);
+    background-image: url(../image/choosing-bg.jpg);
     background-color: #0055ff;
     background-repeat: no-repeat;
     background-size: cover;
@@ -92,7 +92,7 @@ header {
 }
 
 .our_team {
-    background: linear-gradient(#151f38c7, #151f38c7), url(./asset/image/bg/Photo6.jpeg);
+    background: linear-gradient(#151f38c7, #151f38c7), url(../image/bg/Photo6.jpeg);
     background-color: #0055ff;
     background-repeat: no-repeat;
     background-size: cover;
@@ -100,15 +100,15 @@ header {
 }
 
 .membership {
-    background-image: url(./asset/image/choosing-bg.jpg);
-    /* background: linear-gradient(#151f38c7, #151f38c7), url(./asset/image/bg/Photo6.jpeg); */
+    background-image: url(../image/choosing-bg.jpg);
+    /* background: linear-gradient(#151f38c7, #151f38c7), url(../image/bg/Photo6.jpeg); */
     background-color: #0055ff;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 .mission_vision {
-    background: linear-gradient(#151f38c7, #151f38c7), url(./asset/image/bg/Photo7.jpeg);
+    background: linear-gradient(#151f38c7, #151f38c7), url(../image/bg/Photo7.jpeg);
     background-color: #0055ff;
     background-repeat: no-repeat;
     background-size: cover;
