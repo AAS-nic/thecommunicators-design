@@ -160,82 +160,6 @@ h2.heading {
     }
 }
 
-.item img {
-    border-top-right-radius: 5px;
-    border-top-left-radius: 5px;
-}
-
-.item .down-content {
-    padding: 20px;
-    background-color: #fff;
-    border-bottom-right-radius: 5px;
-    border-bottom-left-radius: 5px;
-}
-
-.item .down-content h4 {
-    font-size: 16px;
-    /* text-transform: uppercase; */
-    color: #1e1e1e;
-    letter-spacing: 0.5px;
-    font-weight: 700;
-    margin-top: 0px;
-    margin-bottom: 20px;
-}
-
-.item .down-content p {
-    margin-bottom: 25px;
-    color: #1e1e1e;
-}
-
-.item .down-content img {
-    width: 40px;
-    border: 2px solid #f5a425;
-    border-radius: 50%;
-    text-align: left;
-    display: inline-block;
-}
-
-.item .down-content .text-button-pay {
-    float: right;
-    display: inline-block;
-    margin-top: -30px;
-}
-
-.item .down-content .text-button-pay a {
-    color: #f5a425;
-    font-size: 13px;
-}
-
-.item .down-content .text-button-free {
-    float: right;
-    display: inline-block;
-    margin-top: -30px;
-}
-
-.item .down-content .text-button-free a {
-    color: #7a7a7a;
-    font-size: 13px;
-}
-
-.owl-carousel .owl-nav {
-    display: none;
-}
-
-.owl-carousel .owl-dots {
-    text-align: center;
-}
-
-.owl-carousel button.owl-dot {
-    width: 10px;
-    height: 10px;
-    background-color: #fff;
-    margin: 50px 10px 0px 10px;
-    outline: none;
-}
-.owl-carousel button.active {
-    background-color: #f5a425;
-}
-
 #tabs {
     text-align: center;
 }
@@ -316,7 +240,7 @@ h2.heading {
 }
 #tabs h4 {
     /* margin-top: 60px; */
-    font-size: 32px;
+    font-size: 17px;
     font-weight: 700;
     letter-spacing: 1px;
     /* color: #fff; */
@@ -331,6 +255,82 @@ h2.heading {
 
 .tabs-content{
     margin: 0 60px;
+}
+
+.item img {
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+}
+
+.item .down-content {
+    padding: 20px;
+    background-color: #fff;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.item .down-content h4 {
+    font-size: 16px;
+    /* text-transform: uppercase; */
+    color: #1e1e1e;
+    letter-spacing: 0.5px;
+    font-weight: 700;
+    margin-top: 0px;
+    margin-bottom: 20px;
+}
+
+.item .down-content p {
+    margin-bottom: 25px;
+    color: #1e1e1e;
+}
+
+.item .down-content img {
+    width: 40px;
+    border: 2px solid #f5a425;
+    border-radius: 50%;
+    text-align: left;
+    display: inline-block;
+}
+
+.item .down-content .text-button-pay {
+    float: right;
+    display: inline-block;
+    margin-top: -30px;
+}
+
+.item .down-content .text-button-pay a {
+    color: #f5a425;
+    font-size: 13px;
+}
+
+.item .down-content .text-button-free {
+    float: right;
+    display: inline-block;
+    margin-top: -30px;
+}
+
+.item .down-content .text-button-free a {
+    color: #7a7a7a;
+    font-size: 13px;
+}
+
+.owl-carousel .owl-nav {
+    display: none;
+}
+
+.owl-carousel .owl-dots {
+    text-align: center;
+}
+
+.owl-carousel button.owl-dot {
+    width: 10px;
+    height: 10px;
+    background-color: #fff;
+    margin: 50px 10px 0px 10px;
+    outline: none;
+}
+.owl-carousel button.active {
+    background-color: #f5a425;
 }
 
 /*----bootstrap override------*/
