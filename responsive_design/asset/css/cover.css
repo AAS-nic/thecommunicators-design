@@ -59,6 +59,31 @@ body {
 .b1psr {
     border: 1px solid red !important;
 }
+/*---Animation---*/
+.to-animate {
+    opacity: 0;
+}
+
+.to-animate.fade-in {
+    -webkit-animation: fade-in 3s forwards;
+    animation: fade-in 3s forwards;
+}
+@-webkit-keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
 
 /*---own css---*/
 header {
