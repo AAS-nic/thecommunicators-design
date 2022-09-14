@@ -73,10 +73,10 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6 p-4 to-animate" data-animation="fade-in">
+                    <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6 p-4 to_animate" data-animation="slide_from_left">
                         <img src="./asset/image/image3.jpeg" class="w-100 bordered-img" />
                     </div>
-                    <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6 p-4 text-justify to-animate" data-animation="fade-in">
+                    <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6 p-4 text-justify to_animate" data-animation="slide_from_right">
                         The Communicators is a platform for all communication preceptors and professionals and is
                         devoted to literacy, exploration, education, invention, creative exertion and public engagement.
                         The
@@ -105,7 +105,7 @@
                             </ul>
                             <section class='tabs-content'>
                                 <article id='tabs-1'>
-                                    <div class="owl-carousel owl-theme">
+                                    <div class="owl-carousel owl-theme to_animate" data-animation="fade-in">
                                         <div class="item">
                                             <img src="./asset/image/Ananda Sir.png" alt="Course #2" width="285px"
                                                 height="auto">
@@ -325,7 +325,7 @@
         <div class="membership py-5">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-7 col-xs-12">
+                    <div class="col-md-7 col-xs-12 to_animate" data-animation="slide_from_left">
                         <div class="continer centerIt">
                             <div>
                                 <h4>Become a <em>Member</em> Today!</h4>
@@ -403,7 +403,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-5">
+                    <div class="col-md-5 to_animate" data-animation="slide_from_right">
                         <div class="right-content">
                             <div class="top-content">
                                 <h6>Become a member Today With Fill The Form</h6>
@@ -445,7 +445,7 @@
         <div class="mission_vision py-5">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-6 align-self-center">
+                    <div class="col-md-6 align-self-center to_animate" data-animation="slide_from_left">
                         <div class="left-content">
                             <h4>Our <em>Mission</em></h4>
                             <p class="text-justify">The Communicators is a platform for all communication
@@ -475,7 +475,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6 align-self-center">
+                    <div class="col-md-6 align-self-center to_animate" data-animation="slide_from_right">
                         <div class="left-content">
                             <h4>Our <em>Vision</em></h4>
                             <p class="text-justify">To encourage and transform communicators to become the leaders of
@@ -514,9 +514,10 @@
                 var $window = $(window);
                 var bottom_of_window = $window.scrollTop() + $window.height();
 
-                $('.to-animate').each(function (i) {
+                $('.to_animate').each(function (i) {
                     var $that = $(this);
-                    var bottom_of_object = $that.position().top + $that.outerHeight();
+                    // var bottom_of_object = $that.position().top + $that.outerHeight();
+                    var bottom_of_object = $that.position().top + $that.outerHeight()/2;
 
                     //if element is in viewport, add the animate class
                     if (bottom_of_window > bottom_of_object) {

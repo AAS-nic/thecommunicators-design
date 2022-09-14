@@ -60,11 +60,12 @@ body {
     border: 1px solid red !important;
 }
 /*---Animation---*/
-.to-animate {
+.to_animate {
     opacity: 0;
 }
 
-.to-animate.fade-in {
+/*animation: fade-in*/
+.to_animate.fade-in {
     -webkit-animation: fade-in 3s forwards;
     animation: fade-in 3s forwards;
 }
@@ -82,6 +83,68 @@ body {
     }
     100% {
         opacity: 1;
+    }
+}
+
+/*animation: slide_from_left*/
+.to_animate.slide_from_left {
+    -webkit-animation: slide_from_left 2s forwards;
+    animation: slide_from_left 2s forwards;
+    animation-timing-function: cubic-bezier(0.445, 0.05, 0.55, 0.95);
+}
+@-webkit-keyframes slide_from_left {
+    0% {
+        opacity: 0;
+        position: relative;
+        left: -10%;
+    }
+    100% {
+        opacity: 1;
+        position: relative;
+        left: 0;
+    }
+}
+@keyframes slide_from_left {
+    0% {
+        opacity: 0;
+        position: relative;
+        left: -10%;
+    }
+    100% {
+        opacity: 1;
+        position: relative;
+        left: 0;
+    }
+}
+
+/*animation: slide_from_right*/
+.to_animate.slide_from_right {
+    -webkit-animation: slide_from_right 2s forwards;
+    animation: slide_from_right 2s forwards;
+    animation-timing-function: cubic-bezier(0.445, 0.05, 0.55, 0.95);
+}
+@-webkit-keyframes slide_from_right {
+    0% {
+        opacity: 0;
+        position: relative;
+        right: -10%;
+    }
+    100% {
+        opacity: 1;
+        position: relative;
+        right: 0;
+    }
+}
+@keyframes slide_from_right {
+    0% {
+        opacity: 0;
+        position: relative;
+        right: -10%;
+    }
+    100% {
+        opacity: 1;
+        position: relative;
+        right: 0;
     }
 }
 
