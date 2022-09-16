@@ -202,6 +202,14 @@ header {
     background-size: cover;
 }
 
+.events {
+    background-image: url(../image/choosing-bg.jpg);
+    /* background: linear-gradient(#151f38c7, #151f38c7), url(../image/bg/Photo6.jpeg); */
+    background-color: #0055ff;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 .bordered-img {
     outline: solid rgba(255, 255, 255, 0.362) 4px;
 }
