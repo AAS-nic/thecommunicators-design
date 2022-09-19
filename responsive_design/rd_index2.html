@@ -29,7 +29,7 @@
     <link href="./asset/css/cover.css" rel="stylesheet" />
 </head>
 
-<body class="bg-dark min-vh-100 text-white text-center">
+<body class="bg-dark text-white text-center">
     <header class="fixed-top container-fluid">
         <div class="container">
             <div class="d-flex flex-wrap justify-content-center align-items-center">
@@ -486,6 +486,51 @@
                 </div>
             </div>
         </div>
+
+        <div class="events py-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 align-self-center to_animate" data-animation="slide_from_left">
+                        <div class="left-content">
+                            <h4>Our <em>Mission</em></h4>
+                            <p class="text-justify">The Communicators is a platform for all communication
+                                educators and professionals and
+                                is dedicated to learning, research, scholarship, innovation, creative activity, and
+                                public
+                                engagement.
+                                The Communicators welcome and support students, scholars and communication professionals
+                                from all
+                                over the world and contribute to knowledge and expertise locally, nationally and
+                                internationally.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <article class="video-item">
+                            <figure>
+                                <img class="bordered-img" src="./asset/image/image8.jpeg">
+                            </figure>
+                        </article>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="vision_content">
+                            <div>
+                                <img class="bordered-img" src="./asset/image/nick-fewings-vision.jpg" width="500px"
+                                    height="auto" style="max-width: 330px;" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 align-self-center to_animate" data-animation="slide_from_right">
+                        <div class="left-content">
+                            <h4>Our <em>Vision</em></h4>
+                            <p class="text-justify">To encourage and transform communicators to become the leaders of
+                                the
+                                world.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
 
     <!-- Scripts -->
@@ -517,7 +562,7 @@
                 $('.to_animate').each(function (i) {
                     var $that = $(this);
                     // var bottom_of_object = $that.position().top + $that.outerHeight();
-                    var bottom_of_object = $that.position().top + $that.outerHeight()/2;
+                    var bottom_of_object = $that.position().top /* + $that.outerHeight()/2 */;
 
                     //if element is in viewport, add the animate class
                     if (bottom_of_window > bottom_of_object) {
